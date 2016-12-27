@@ -1,4 +1,4 @@
-from module1 import *
+#from module1 import *
 
 from engine import *
 
@@ -7,10 +7,8 @@ class test:
 		self.x = 4
 
 a = test()
-b = OtherTest()
 
 print(a.x)
-print(b.name)
 
 game = GameEngine()
 game.mainLoop()

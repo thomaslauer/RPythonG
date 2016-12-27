@@ -1,8 +1,11 @@
 import pygame
+from ItemInfo import *
+import os
 
 class sprite:
-	def __init__(self, imageID, id, sizex, sizey):
-		self.image = pygame.image.load(imageID)
+	def __init__(self, id, resource, sizex, sizey):
+		ItemDict.iDict[id] = pygame.image.load(os.path.join("__pycache__", resource))
+		
 		self.id = id
 		self.x = 0
 		self.y = 0
@@ -17,3 +20,15 @@ class sprite:
 		return tuple(self.x, self.y)
 
 
+	'''
+	How do we want to resize sprites?
+	Should this be done one time only, i.e. on init, 
+	or do we want a helper method so that it can be 
+	done more than once. Should it be by a scale factor,
+	or by a raw number of pixels?
+	'''
+	def resize():
+		return  # Placeholder until we figure our what to do here
+
+	def drawSelf(self, window, x):
+		window.blit(ItemDict.iDict[self.id], (x,0))

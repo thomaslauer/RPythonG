@@ -1,18 +1,19 @@
-class ItemHandler:   
-    # ID table contains list of all in-play sprites, along with relevant information
-    # Stored as tuples (id, x, y, visible, etc.)
-
-    def __init__(self):
-        self.ItemIDTable = list()
-        self.avatar = 0
-
-    def id_Avatar(self): return self.avatar
+import pygame
 
 
+'''
+The constants field will be hard-coded in. It will not change during the run.
+iDict will be added to each time a new image is loaded in for the first time. After that, 
+images will be accessed through the dictionary.s
+'''
+class ItemDict:
 
+	# Constants corresponding to each image
+	AVATAR = 0
 
-    '''
-    def remove_from_table(self, id):
-        for itemTuple in self.ItemIDTable:
-            if itemTuple
-    '''
+	'''
+	Dictionary linking resources to image names
+	Contains the image corresponding to each element.
+	'''
+	iDict = { }
+
