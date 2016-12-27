@@ -9,13 +9,11 @@ class sprite:
 		self.sizex = sizex
 		self.sizey = sizey
 
-	def setPosition(x, y):
+	def setPosition(self, x, y):
 		self.x = x
 		self.y = y
-    
-    def getPosition():
-        return tuple(self.x, self.y)
 
+	def getPosition(self):
+		return tuple(self.x, self.y)
 
-    
 
