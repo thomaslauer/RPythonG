@@ -26,6 +26,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="RPythonG.py" />
+    <Compile Include="sprite.py" />
+    <Compile Include="window.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
