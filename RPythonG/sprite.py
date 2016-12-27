@@ -4,7 +4,7 @@ import os
 
 class sprite:
 	def __init__(self, id, resource, sizex, sizey):
-		ItemDict.iDict[id] = pygame.transform.scale(pygame.image.load(os.path.join('__pycache__', resource)), (int(sizex), int(sizey)))
+		TextureMap.iDict[id] = pygame.transform.scale(pygame.image.load(os.path.join('__pycache__', resource)), (int(sizex), int(sizey)))
 		
 		self.id = id
 		self.x = 0
@@ -32,4 +32,4 @@ class sprite:
 
 	# Takes window to draw into, and the (x,y) coords to draw at.
 	def drawSelf(self, window, x, y):
-		window.blit(ItemDict.iDict[self.id], (x,y))
+		window.blit(TextureMap.iDict[self.id], (x,y))

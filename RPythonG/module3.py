@@ -4,7 +4,7 @@ import pygame
 
 class Avatar(sprite):
 	def __init__(self, resource, x, y):
-		super().__init__(ItemDict.AVATAR, resource, 15, 15)
+		super().__init__(TextureMap.AVATAR, resource, 15, 15)
 	
 	
 
