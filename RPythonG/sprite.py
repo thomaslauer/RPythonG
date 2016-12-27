@@ -30,5 +30,6 @@ class sprite:
 	def resize():
 		return  # Placeholder until we figure our what to do here
 
-	def drawSelf(self, window, x):
-		window.blit(ItemDict.iDict[self.id], (x,0))
+	# Takes window to draw into, and the (x,y) coords to draw at.
+	def drawSelf(self, window, x, y):
+		window.blit(ItemDict.iDict[self.id], (x,y))

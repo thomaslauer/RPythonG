@@ -29,12 +29,7 @@ class GameEngine:
 		while self.running:
 			self.window.fill(self.background_color)
 
-
-			# do update here
-			#Avatar.drawAvatar(self.window, x)
-			self.avatar.drawSelf(self.window, x)
-
-			#pygame.draw.circle(self.window, (0, 0, 255), (x, 100), 15, 5)
+			self.avatar.drawSelf(self.window, x, 0)
 			x += 1
 
 			# check for exit
@@ -43,7 +38,7 @@ class GameEngine:
 					self.running = False
 			if self.running:
 				self.flipWindowBuffers()
-
+			
 			self.clock.tick(self.fps) # fps cap
 	def flipWindowBuffers(self):
 		pygame.display.flip()
