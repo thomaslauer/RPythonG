@@ -1,3 +1,5 @@
+import pygame
+
 class sprite:
 	def __init__(self, image, id, sizex, sizey):
 		self.image = image
