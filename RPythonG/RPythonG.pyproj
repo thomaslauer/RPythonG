@@ -26,7 +26,7 @@
     <Compile Include="module3.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ItemInfo.py">
+    <Compile Include="Texture.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="RPythonG.py" />

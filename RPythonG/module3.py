@@ -1,10 +1,9 @@
 from sprite import *
-from ItemInfo import *
 import pygame
 
 class Avatar(sprite):
 	def __init__(self, resource, x, y):
-		super().__init__(TextureMap.AVATAR, resource, 15, 15)
+		super().__init__(0, resource, 15, 15)
 	
 	
 
