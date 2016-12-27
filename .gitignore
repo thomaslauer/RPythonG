@@ -51,3 +51,4 @@ Temporary Items
 .apdisk
 *.pyc
 .vs/RPythonG/v14/.suo
+*.pyc

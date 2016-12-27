@@ -23,7 +23,7 @@ class GameEngine:
 		self.running = False
 		self.setBackgroundColor((0, 0, 0))
 		self.fps = 60
-		self.avatar = Avatar("Sci-fi Avatar.png", 15, 15)
+		self.avatar = Avatar("Sci-fi Avatar.png", 30, 30)
 
 	# Get the currently pressed direction key(s), and return the direction to move accordingly
 	# return as a tuple
@@ -31,13 +31,13 @@ class GameEngine:
 		coords = [0,0]
 		keys = pygame.key.get_pressed()
 		if keys[pygame.K_UP]:
-			coords[1] += MOVE_UP
+			coords[1] -= self.getDeltaTime() * 100
 		if keys[pygame.K_DOWN]:
-			coords[1] += MOVE_DOWN
+			coords[1] += self.getDeltaTime() * 100
 		if keys[pygame.K_LEFT]:
-			coords[0] += MOVE_LEFT
+			coords[0] -= self.getDeltaTime() * 100
 		if keys[pygame.K_RIGHT]:
-			coords[0] += MOVE_RIGHT
+			coords[0] += self.getDeltaTime() * 100
 		return tuple(coords)
 
 
