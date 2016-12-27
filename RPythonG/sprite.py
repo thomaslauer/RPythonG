@@ -4,7 +4,7 @@ import os
 
 class sprite:
 	def __init__(self, id, resource, sizex, sizey):
-		ItemDict.iDict[id] = pygame.image.load(os.path.join("__pycache__", resource))
+		ItemDict.iDict[id] = pygame.transform.scale(pygame.image.load(os.path.join('__pycache__', resource)), (int(sizex), int(sizey)))
 		
 		self.id = id
 		self.x = 0

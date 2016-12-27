@@ -22,7 +22,7 @@ class GameEngine:
 		self.initWindow(300, 300)
 		self.running = False
 		self.setBackgroundColor((0, 0, 0))
-		self.fps = 30
+		self.fps = 60
 		self.avatar = Avatar("Sci-fi Avatar.png", 15, 15)
 
 	# Get the currently pressed direction key(s), and return the direction to move accordingly
@@ -69,7 +69,8 @@ class GameEngine:
 			self.clock.tick(self.fps) # fps cap
 	
 	
-	
+	def getDeltaTime(self):
+		return 1/self.fps
 
 	def flipWindowBuffers(self):
 		pygame.display.flip()

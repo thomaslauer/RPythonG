@@ -31,7 +31,6 @@
     </Compile>
     <Compile Include="RPythonG.py" />
     <Compile Include="sprite.py" />
-    <Compile Include="window.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="__pycache__\" />
