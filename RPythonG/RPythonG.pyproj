@@ -22,9 +22,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="module2.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="module3.py">
       <SubType>Code</SubType>
     </Compile>
@@ -33,7 +30,7 @@
     </Compile>
     <Compile Include="RPythonG.py" />
     <Compile Include="sprite.py" />
-    <Compile Include="engine.py" />
+    <Compile Include="window.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
